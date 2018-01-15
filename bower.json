@@ -1,0 +1,21 @@
+{
+  "name": "building-web-app",
+  "description": "Typing along with the pluralsight course from Jonathan Mills",
+  "main": "app.js",
+  "authors": [
+    "Remi Kristelijn <rkristelijn@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rkristelijn/building-web-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
