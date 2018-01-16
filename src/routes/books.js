@@ -24,4 +24,18 @@ bookRouter.route('/')
     });
   });
 
-  module.exports = bookRouter;
+bookRouter.route('/:id')
+  .get(function (req, res) {
+    var id = req.params.id;
+    console.log(id);
+    res.render('book', {
+      title: 'Hello from book',
+      nav: [
+        { link: '/books', text: 'Books' },
+        { link: '/authors', text: 'Authors' }
+      ],
+      book: books[id]
+    });
+  });
+
+module.exports = bookRouter;
