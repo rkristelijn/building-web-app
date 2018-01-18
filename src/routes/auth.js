@@ -6,7 +6,6 @@ var passport = require('passport');
 var router = function (nav) {
   authRouter.route('/signup')
     .post(function (req, res) {
-      console.log(req.body);
       var url = 'mongodb://127.0.0.1:27017/libraryApp';
       mongodb.connect(url, function (err, db) {
         var collection = db.collection('users');
