@@ -33,6 +33,6 @@ var router = function (nav) {
       });
     });
 
-    return bookRouter;
-  }
+  return bookRouter;
+};
 module.exports = router;
